@@ -1,6 +1,6 @@
 # prog2
 
---------------------------------------------------------------------------AJÁNDÉK AJÁNLÓ---------------------------------------------------------------------------------
+AJÁNDÉK AJÁNLÓ
 
 Projektem keretein belül szeretnék egy weblapot elkészíteni. 
 A weblap célja, hogy ajándékötletekkel szolgáljon az emberek számára.
