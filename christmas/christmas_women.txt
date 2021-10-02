@@ -1,0 +1,50 @@
+1.  socks
+2.  hat
+3.  scarf
+4.  heating pad
+5.  perfume
+6.  hot cocoa kit
+7.  mug
+8.  hoodie
+9.  sweater
+10. blanket
+11. skin care
+12. bath bomb
+13. uggs
+14. book
+15. planner
+16. candle
+17. lights
+18. pj
+19. slippers
+20. mirror
+21. makeup
+22. makeup brushes
+23. bag
+24. nail polish kit
+25. phone case
+26. gloves
+27. robe
+28. ear buds
+29. necklace
+30. bracelet
+31. earrings
+32. desk lamp
+33. led lights
+34. room decor
+35. workout clothes
+36. hair dryer
+37. cardigan
+38. wallet
+39. blender
+40. metal straw
+41. thermos
+42. polaroid camera
+43. loungewear
+44. diffuser
+45. wireless charger
+46. flat iron
+47. fitbit
+48. neck massager
+49. belt bag
+50. ice roller
