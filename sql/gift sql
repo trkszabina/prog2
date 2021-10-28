@@ -1,0 +1,271 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 28, 2021 at 09:15 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `gift`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `birthdaymen`
+--
+
+CREATE TABLE `birthdaymen` (
+  `name` varchar(20) NOT NULL,
+  `link` varchar(150) NOT NULL,
+  `price` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `birthdaymen`
+--
+
+INSERT INTO `birthdaymen` (`name`, `link`, `price`) VALUES
+('cologne', 'https://www.amazon.com/s?k=cologne+for+men&sprefix=colog%2Caps%2C265&ref=nb_sb_ss_ts-doa-p_1_5', 30),
+('extra long usb cable', 'https://www.amazon.com/s?k=extra+long+usb+cable&sprefix=extra+long+u%2Caps%2C240&ref=nb_sb_ss_ts-doa-p_2_12', 7),
+('gift card', 'https://www.amazon.com/s?k=birthday+card&crid=CQFYQGAQZXYG&sprefix=birthday+card%2Caps%2C321&ref=nb_sb_noss', 3),
+('grill set', 'https://www.amazon.com/s?k=grill+set&sprefix=grill+s%2Caps%2C229&ref=nb_sb_ss_ts-doa-p_3_7', 32),
+('gym bag', 'https://www.amazon.com/s?k=gym+bag&sprefix=gym+b%2Caps%2C399&ref=nb_sb_ss_ts-doa-p_1_5', 25),
+('massage seat', 'https://www.amazon.com/s?k=massage+chair&sprefix=mass%2Caps%2C292&ref=nb_sb_ss_ts-doa-p_6_4', 85);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `birthdaywomen`
+--
+
+CREATE TABLE `birthdaywomen` (
+  `name` varchar(20) NOT NULL,
+  `link` varchar(150) NOT NULL,
+  `price` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `birthdaywomen`
+--
+
+INSERT INTO `birthdaywomen` (`name`, `link`, `price`) VALUES
+('flowers', 'rose bear', 25),
+('karaoke machine', 'https://www.amazon.com/s?k=karaoke+machine&sprefix=karao%2Caps%2C318&ref=nb_sb_ss_ts-doa-p_1_5', 110),
+('make up', 'https://www.amazon.com/s?k=makeup&sprefix=make%2Caps%2C298&ref=nb_sb_ss_ts-doa-p_3_4', 39),
+('polaroid camera', 'https://www.amazon.com/s?k=polaroid+cameras&sprefix=pola%2Caps%2C270&ref=nb_sb_ss_ts-doa-p_1_4', 70),
+('purse', 'https://www.amazon.com/s?k=purse&crid=3AVEIYGRYCMSG&sprefix=purse%2Caps%2C320&ref=nb_sb_noss', 30),
+('scrunchies', 'https://www.amazon.com/s?k=birthday+card&crid=CQFYQGAQZXYG&sprefix=birthday+card%2Caps%2C321&ref=nb_sb_noss', 8);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `christmasmen`
+--
+
+CREATE TABLE `christmasmen` (
+  `name` varchar(20) NOT NULL,
+  `link` varchar(150) NOT NULL,
+  `price` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `christmasmen`
+--
+
+INSERT INTO `christmasmen` (`name`, `link`, `price`) VALUES
+('alarm clock', 'https://www.amazon.com/s?k=alarm+clock&crid=2TW465NVS9BRT&sprefix=alarm%2Caps%2C300&ref=nb_sb_ss_ts-doa-p_2_5', 20),
+('coffee machine', 'https://www.amazon.com/s?k=coffee+maker&sprefix=coffee%2Caps%2C259&ref=nb_sb_ss_ts-doa-p_2_6', 105),
+('gaming keyboard', 'https://www.amazon.com/s?k=gaming+keyboard&sprefix=gaming+ke%2Caps%2C521&ref=nb_sb_ss_ts-doa-p_2_9', 60),
+('gloves', 'https://www.amazon.com/s?k=gloves+winter&crid=37IV0QTJVQJ46&sprefix=gloves+%2Caps%2C196&ref=nb_sb_ss_ts-doa-p_1_7', 12),
+('portable speaker', 'https://www.amazon.com/s?k=portable+speaker&sprefix=port%2Caps%2C342&ref=nb_sb_ss_ts-doa-p_6_4', 40),
+('sweater', 'https://www.amazon.com/s?k=sweaters+for+men&sprefix=sweate%2Caps%2C308&ref=nb_sb_ss_ts-doa-p_5_6', 27);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `christmaswomen`
+--
+
+CREATE TABLE `christmaswomen` (
+  `name` varchar(20) NOT NULL,
+  `link` varchar(150) NOT NULL,
+  `price` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `christmaswomen`
+--
+
+INSERT INTO `christmaswomen` (`name`, `link`, `price`) VALUES
+('fit bit', 'https://www.amazon.com/s?k=fit+bitwatches+for+women&sprefix=fit+bi%2Caps%2C245&ref=nb_sb_ss_ts-doa-p_1_6', 150),
+('hot cocoa kit', 'https://www.amazon.com/s?k=hot+cocoa+kit&sprefix=hot+cocoa+k%2Caps%2C220&ref=nb_sb_ss_ts-doa-p_5_11', 34),
+('neck massager', 'https://www.amazon.com/s?k=neck+massager&crid=2S2AUY8TEZTVY&sprefix=neck+m%2Caps%2C228&ref=nb_sb_ss_ts-doa-p_2_6', 36),
+('robe', 'https://www.amazon.com/s?k=robes+for+women&sprefix=robe%2Caps%2C660&ref=nb_sb_ss_ts-doa-p_1_4', 39),
+('slippers', 'https://www.amazon.com/s?k=slippers+for+women&sprefix=slipp%2Caps%2C204&ref=nb_sb_ss_ts-doa-p_1_5', 21),
+('socks', 'https://www.amazon.com/s?k=christmas+socks&crid=1XMFM40INABFI&sprefix=christmas+soc%2Caps%2C458&ref=nb_sb_noss', 16);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fathersday`
+--
+
+CREATE TABLE `fathersday` (
+  `name` varchar(20) NOT NULL,
+  `link` varchar(150) NOT NULL,
+  `price` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `fathersday`
+--
+
+INSERT INTO `fathersday` (`name`, `link`, `price`) VALUES
+('cufflinks', 'https://www.amazon.com/s?k=cufflinks&sprefix=cuffl%2Caps%2C243&ref=nb_sb_ss_ts-doa-p_1_5', 15),
+('indoor slippers', 'https://www.amazon.com/s?k=indoor+slippers&sprefix=indoor+sl%2Caps%2C245&ref=nb_sb_ss_ts-doa-p_1_9', 20),
+('massage gun', 'https://www.amazon.com/s?k=massage+gun&sprefix=massage+g%2Caps%2C253&ref=nb_sb_ss_ts-doa-p_2_9', 50),
+('shaving kit', 'https://www.amazon.com/s?k=shaving+kit&sprefix=shaving+k%2Caps%2C218&ref=nb_sb_ss_ts-doa-p_1_9', 25),
+('spice set', 'https://www.amazon.com/s?k=spice+set&sprefix=spice+s%2Caps%2C221&ref=nb_sb_ss_ts-doa-p_3_7', 43),
+('tools', 'https://www.amazon.com/s?k=tools&crid=3VF7GJK4ZFVFC&sprefix=tools%2Caps%2C234&ref=nb_sb_noss', 90);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mothersday`
+--
+
+CREATE TABLE `mothersday` (
+  `name` varchar(20) NOT NULL,
+  `link` varchar(150) NOT NULL,
+  `price` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `mothersday`
+--
+
+INSERT INTO `mothersday` (`name`, `link`, `price`) VALUES
+('candle', 'https://www.amazon.com/s?k=candles&sprefix=cand%2Caps%2C292&ref=nb_sb_ss_ts-doa-p_3_4', 15),
+('card', 'https://www.amazon.com/s?k=mothers+day+card&sprefix=mothers+day+%2Caps%2C217&ref=nb_sb_ss_ts-doa-p_4_12', 10),
+('foot warmer', 'https://www.amazon.com/s?k=foot+warmer&sprefix=foot+w%2Caps%2C220&ref=nb_sb_ss_ts-doa-p_1_6', 50),
+('jewelry box', 'https://www.amazon.com/s?k=jewelry+box&sprefix=jewe%2Caps%2C295&ref=nb_sb_ss_ts-doa-p_5_4', 45),
+('kitchen utensils', 'https://www.amazon.com/s?k=kitchen+utensils+set&sprefix=kitchen+utensils+%2Caps%2C234&ref=nb_sb_ss_ts-doa-p_2_9', 29),
+('spa basket', 'https://www.amazon.com/s?k=spa+baskets&crid=2KB8J15KKNV54&sprefix=spa+baskets+%2Caps%2C244&ref=nb_sb_noss', 35);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `valentinesmen`
+--
+
+CREATE TABLE `valentinesmen` (
+  `name` varchar(20) NOT NULL,
+  `link` varchar(150) NOT NULL,
+  `price` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `valentinesmen`
+--
+
+INSERT INTO `valentinesmen` (`name`, `link`, `price`) VALUES
+('beard kit', 'https://www.amazon.com/s?k=beard+kit&sprefix=beard+k%2Caps%2C235&ref=nb_sb_ss_ts-doa-p_1_7', 15),
+('chocolate basket', 'https://www.amazon.com/s?k=chocolate+basket&sprefix=chocolate+bas%2Caps%2C310&ref=nb_sb_ss_ts-doa-p_3_13', 25),
+('couples phone case', 'https://www.amazon.com/s?k=phone+case+for+couples&sprefix=phone+case+for+cou%2Caps%2C291&ref=nb_sb_ss_ts-doa-p_1_18', 20),
+('love box', 'https://www.amazon.com/s?k=love+box&sprefix=love+b%2Caps%2C285&ref=nb_sb_ss_ts-doa-p_2_6', 120),
+('massage oil', 'https://www.amazon.com/s?k=massage+oil&sprefix=massage+oi%2Caps%2C238&ref=nb_sb_ss_ts-doa-p_1_10', 34),
+('watch', 'https://www.amazon.com/s?k=watch&crid=R8661UCV0N0F&sprefix=watch%2Caps%2C246&ref=nb_sb_noss', 40);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `valentineswomen`
+--
+
+CREATE TABLE `valentineswomen` (
+  `name` varchar(20) NOT NULL,
+  `link` varchar(150) NOT NULL,
+  `price` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `valentineswomen`
+--
+
+INSERT INTO `valentineswomen` (`name`, `link`, `price`) VALUES
+('bath bombs', 'https://www.amazon.com/s?k=bath+bombs&sprefix=bath+b%2Caps%2C256&ref=nb_sb_ss_ts-doa-p_1_6', 25),
+('eternal rose', 'https://www.amazon.com/s?k=eternal+rose&sprefix=eternal+r%2Caps%2C290&ref=nb_sb_ss_ts-doa-p_1_9', 20),
+('giant teddy', 'https://www.amazon.com/s?k=giant+teddy&crid=1R1HRTWIAMABH&sprefix=giant+teddy%2Caps%2C218&ref=nb_sb_noss', 100),
+('make up brushes', 'https://www.amazon.com/s?k=make+up+brushes&crid=3NTIIPDRLCAML&sprefix=make+%2Caps%2C267&ref=nb_sb_ss_ts-doa-p_2_5', 12),
+('onesies', 'https://www.amazon.com/s?k=onesies+for+teens&crid=342PQ9IZV66UK&sprefix=onesies%2Caps%2C243&ref=nb_sb_ss_ts-doa-p_2_7', 35),
+('touch bond', 'https://www.amazon.com/s?k=touch+bond&sprefix=touch+b%2Caps%2C294&ref=nb_sb_ss_ts-doa-p_3_7', 110);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `birthdaymen`
+--
+ALTER TABLE `birthdaymen`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indexes for table `birthdaywomen`
+--
+ALTER TABLE `birthdaywomen`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indexes for table `christmasmen`
+--
+ALTER TABLE `christmasmen`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indexes for table `christmaswomen`
+--
+ALTER TABLE `christmaswomen`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indexes for table `fathersday`
+--
+ALTER TABLE `fathersday`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indexes for table `mothersday`
+--
+ALTER TABLE `mothersday`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indexes for table `valentinesmen`
+--
+ALTER TABLE `valentinesmen`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indexes for table `valentineswomen`
+--
+ALTER TABLE `valentineswomen`
+  ADD PRIMARY KEY (`name`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
