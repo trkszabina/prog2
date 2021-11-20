@@ -1,0 +1,99 @@
+* 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+  body
+  {
+    font-size: 120%;
+    background-image: url("background1.png");
+  }
+
+  .header {
+    width: 30%;
+    margin: 50px auto 0px;
+    text-align: left;
+    padding: 20px;
+  }
+
+  form, .content {
+    width: 20%;
+    margin: 0px auto;
+    padding: 15px;
+    position: absolute;
+    margin-left: 10%;
+  }
+  .input-group {
+    margin: 10px 0px 10px 0px;
+  }
+  .input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+  }
+  .input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-left: 0%;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #000000;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: red;
+  }
+
+  table
+{
+    background-color: grey;
+    border-radius: 1em;
+    padding-left: 2em;
+    margin-left: 2em;
+    box-shadow: 7px 7px 10px rgb(53, 53, 53);
+    
+}
+
+.rectangle
+{
+    padding-left: 0em;
+    margin-left: 0em;
+}
+
+th
+{
+    font-size: 1.8em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+a.header:link, a.header:visited 
+{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
